@@ -18,7 +18,7 @@ subMetering3 <- as.numeric(dat_sel$Sub_metering_3)
 #Plot Graphs
 png("../Desktop/Coursera/ExData_Plotting1/Plot4.png",width = 480, height = 480, units = "px",bg="white")
 par(mfrow = c(2, 2)) 
-plot(dat_sel$datetime, dat_sel$globalActivePower, type="l", xlab="", ylab="Global Active Power", cex=0.2)
+plot(x=dat_sel$datetime,y=dat_sel$Global_active_power, type="l", xlab="", ylab="Global Active Power", cex=0.2)
 plot(dat_sel$datetime, voltage, type="l", xlab="datetime", ylab="Voltage")
 plot(dat_sel$datetime, subMetering1, type="l", ylab="Energy Submetering", xlab="")
 lines(dat_sel$datetime, subMetering2, type="l", col="red")
